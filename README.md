@@ -1,1 +1,1 @@
-"# Tabela-de-horas-complementares" 
+Necessário criar um banco de dados firestore do fire e seguir esses passos: Configurações de projeto -> Geral -> Adicionar um aplicativo -> Confiutações do SDK -> Config -> copiar o "firebaseConfig" da sua conta e substituir pelo existente no arquivo "script".
