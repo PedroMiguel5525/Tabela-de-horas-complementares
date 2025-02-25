@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    
+    <link rel="stylesheet" href="styles.css"/>
+
+    <title>Horas complementares</title>
+</head>
+<body>
+
+    <h1 class="centralize">Tabela para cálculo de horas complementares</h1>
+
+    <div id = "select" class="centralize">
+
+        <select onchange = "atividades()" id="customSelect"></select>
+
+    </div>
+    <div id="select2" class="centralize">
+
+    </div>
+    <div class="centralize">
+
+        <label for="horas" >Insira o número de horas: </label>
+        <input type="number" id="numHor" placeholder="Digite o número de horas"/>
+
+    </div>
+    <div class="centralize">
+
+        <label for="espec">Insira o nome da atividade: </label>
+        <input type="text" id="espec" placeholder="Digite o nome da atividade"/>
+
+    </div>
+
+    <div id="botoes" class="centralize"><button onclick="inserir()">Inserir</button><button onclick="carregar()">Carregar</button></div>
+        
+
+    <h1 id="total" class="centralize"></h1>
+
+    <div id="tabela"></div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
